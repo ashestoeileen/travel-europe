@@ -1,0 +1,55 @@
+* {box-sizing:border-box;}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body {
+    margin:0;
+    background-image: url(images/globe.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+
+    
+}
+.star li {list-style-image: url(images/star-icon.svg);
+    }
+
+.homepage h2 {
+    writing-mode: vertical-rl;
+    transform:rotate(180deg);
+    margin-top:80px;
+    margin-right:-10px;
+    
+}
+.homepage main {
+    display: flex;
+    height:100vh;
+    width:100vw;
+}
+.homepage main div {
+    flex:1;
+    position:relative;
+
+}
+.homepage main div.wander {
+    flex:2;
+}
+.number {
+    position:absolute;
+    bottom:1px;
+    right:1px;
+  
+}
+
+.paris, .paris-page {
+    background-color: rgba(202, 119, 43, 0.83);
+}
+.amsterdam {
+    background-color: rgba(130, 52, 50, 0.83);
+}
+.london {
+    background-color: rgba(122, 147, 53, 0.83);
+}
+.rail {
+    background-color: rgba(67, 63, 51, 0.83);
+}
