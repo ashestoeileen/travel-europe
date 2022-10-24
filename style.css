@@ -4,6 +4,9 @@ html, body {
   width: 100%;
 }
 body {
+    font-family: 'Lato';
+    font-style: normal;
+    color: rgb(255,255,255,0.8);
     margin:0;
     background-image: url(images/globe.jpg);
     background-size:cover;
@@ -19,6 +22,12 @@ body {
     transform:rotate(180deg);
     margin-top:80px;
     margin-right:-10px;
+
+    position: absolute;
+    font-family: 'Lato';
+    font-style: normal;
+    color: #FFFFFF;
+
     
 }
 .homepage main {
@@ -38,6 +47,9 @@ body {
     position:absolute;
     bottom:1px;
     right:1px;
+    font-family: 'Lato';
+    font-style: normal;
+    color: rgb(255,255,255,0.8);
   
 }
 
