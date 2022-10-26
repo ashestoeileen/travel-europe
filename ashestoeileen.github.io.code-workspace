@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../ashestoeileen.github.io"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "travel-europe"
+	}
+}

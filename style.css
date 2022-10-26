@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Noto+Serif&display=swap');
+
 * {box-sizing:border-box;}
 html, body {
   height: 100%;
@@ -17,15 +19,15 @@ body {
 .star li {list-style-image: url(images/star-icon.svg);
     }
 
+
 .homepage h2 {
     writing-mode: vertical-rl;
     transform:rotate(180deg);
     margin-top:80px;
     margin-right:-10px;
-
-    position: absolute;
-    font-family: 'Lato';
-    font-style: normal;
+    font-family: ‘Lato’, sans-serif; 
+    font-weight: 300;
+    font-size: 40px;
     color: #FFFFFF;
 
     
@@ -56,12 +58,12 @@ body {
 .paris, .paris-page {
     background-color: rgba(202, 119, 43, 0.83);
 }
-.amsterdam {
+.amsterdam, .amsterdam-page {
     background-color: rgba(130, 52, 50, 0.83);
 }
-.london {
+.london, .london-page {
     background-color: rgba(122, 147, 53, 0.83);
 }
-.rail {
+.rail, .rail-route-page {
     background-color: rgba(67, 63, 51, 0.83);
 }
