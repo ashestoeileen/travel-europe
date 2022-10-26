@@ -31,12 +31,15 @@ a {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-align: center;
+  font-size: 120px;
+  margin-top: 340px;
+  line-height: 99px;
 }
 .homepage h2 {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   margin-top: 80px;
-  margin-right: -10px;
+  margin-right: 100px;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-size: 40px;
@@ -60,6 +63,7 @@ a {
   right: 1px;
   font-family: 'Lato';
   font-style: normal;
+  font-size: 70px;
   color: rgb(255, 255, 255, 0.8);
 }
 .wrapper {
@@ -67,6 +71,7 @@ a {
   width: 100vw;
   margin: 0;
   padding: 0;
+  
 }
 .paris,
 .paris-page .wrapper {
