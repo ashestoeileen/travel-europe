@@ -1,69 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Noto+Serif&display=swap');
-
-* {box-sizing:border-box;}
-html, body {
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+* {
+  box-sizing: border-box;
+}
+html,
+body {
   height: 100%;
   width: 100%;
 }
 body {
-    font-family: 'Lato';
-    font-style: normal;
-    color: rgb(255,255,255,0.8);
-    margin:0;
-    background-image: url(images/globe.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
-
-    
+  font-smooth: always;
+  font-family: 'Lato';
+  font-style: normal;
+  color: rgb(255, 255, 255, 0.8);
+  margin: 0;
+  background-image: url(images/globe.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.star li {list-style-image: url(images/star-icon.svg);
-    }
 
-
+a {
+  text-decoration: none;
+}
+.star {
+  margin: 0;
+}
+.star li {
+  list-style-image: url(images/star-icon.svg);
+}
+.homepage h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
 .homepage h2 {
-    writing-mode: vertical-rl;
-    transform:rotate(180deg);
-    margin-top:80px;
-    margin-right:-10px;
-    font-family: ‘Lato’, sans-serif; 
-    font-weight: 300;
-    font-size: 40px;
-    color: #FFFFFF;
-
-    
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-top: 80px;
+  margin-right: -10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  color: #ffffff;
 }
 .homepage main {
-    display: flex;
-    height:100vh;
-    width:100vw;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
 }
 .homepage main div {
-    flex:1;
-    position:relative;
-
+  flex: 1;
+  position: relative;
 }
 .homepage main div.wander {
-    flex:2;
+  flex: 2;
 }
 .number {
-    position:absolute;
-    bottom:1px;
-    right:1px;
-    font-family: 'Lato';
-    font-style: normal;
-    color: rgb(255,255,255,0.8);
-  
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+  font-family: 'Lato';
+  font-style: normal;
+  color: rgb(255, 255, 255, 0.8);
 }
-
-.paris, .paris-page {
-    background-color: rgba(202, 119, 43, 0.83);
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
-.amsterdam, .amsterdam-page {
-    background-color: rgba(130, 52, 50, 0.83);
+.paris,
+.paris-page .wrapper {
+  background-color: rgba(202, 119, 43, 0.83);
 }
-.london, .london-page {
-    background-color: rgba(122, 147, 53, 0.83);
+.amsterdam,
+.amsterdam-page .wrapper {
+  background-color: rgba(130, 52, 50, 0.83);
 }
-.rail, .rail-route-page {
-    background-color: rgba(67, 63, 51, 0.83);
+.london,
+.london-page .wrapper {
+  background-color: rgba(122, 147, 53, 0.83);
+}
+.rail,
+.rail-route-page .wrapper {
+  background-color: rgba(67, 63, 51, 0.83);
 }
