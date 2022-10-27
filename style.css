@@ -18,6 +18,23 @@ body {
   background-repeat: no-repeat;
 }
 
+.flexbox-container
+{display:flex}
+
+.flexbox-right
+{ width:50%;
+margin:0px;
+
+
+}
+
+.flexbox-left
+{ width:50%;
+margin:-400px;
+
+}
+
+
 a {
   text-decoration: none;
 }
@@ -59,7 +76,7 @@ a {
 }
 .number {
   position: absolute;
-  bottom: 1px;
+  bottom: 0px;
   right: 1px;
   font-family: 'Lato';
   font-style: normal;
@@ -75,6 +92,7 @@ a {
 }
 .paris,
 .paris-page .wrapper {
+  
   background-color: rgba(202, 119, 43, 0.83);
 }
 .amsterdam,
@@ -89,3 +107,35 @@ a {
 .rail-route-page .wrapper {
   background-color: rgba(67, 63, 51, 0.83);
 }
+
+.amsterdam-page h1{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-align: left;
+  font-size: 120px;
+  margin-top: 0px;
+  line-height: 99px;}
+
+  .paris-page h1{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    font-size: 120px;
+    margin-top: 0px;
+    line-height: 99px;}
+
+    .london-page h1{
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      text-align: left;
+      font-size: 120px;
+      margin-top: 0px;
+      line-height: 99px;}
+
+      .rail-route-page h1{
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        text-align: left;
+        font-size: 120px;
+        margin-top: 0px;
+        line-height: 99px;}
