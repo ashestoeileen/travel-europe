@@ -71,12 +71,12 @@ h1 {
   width: 100vw;
   overflow: hidden;
 }
-.homepage main div {
+.homepage main > div {
   flex: 1;
   position: relative;
   height: 100vh;
 }
-.homepage main div.wander {
+.homepage main > div.wander {
   flex: 2;
 }
 .number {
@@ -100,17 +100,45 @@ h1 {
 .paris-page .wrapper {
   background-color: rgba(202, 119, 43, 0.83);
 }
+#paris-page {
+  display: none;
+  width: 0;
+  position: relative;
+  opacity: 0;
+  transition: 2s;
+}
 .amsterdam,
 .amsterdam-page .wrapper {
   background-color: rgba(130, 52, 50, 0.83);
+}
+#amsterdam-page {
+  display: none;
+  width: 0;
+  position: relative;
+  opacity: 0;
+  transition: 2s;
 }
 .london,
 .london-page .wrapper {
   background-color: rgba(122, 147, 53, 0.83);
 }
+#london-page {
+  display: none;
+  width: 0;
+  position: relative;
+  opacity: 0;
+  transition: 2s;
+}
 .rail,
 .rail-route-page .wrapper {
   background-color: rgba(67, 63, 51, 0.83);
+}
+#rail-route-page {
+  display: none;
+  width: 0;
+  position: relative;
+  opacity: 0;
+  transition: 2s;
 }
 .wrapper {
   height: 100vh;
@@ -181,4 +209,10 @@ h1 {
 }
 .rail-route-page img {
   padding-top: 15%;
+}
+.back-arrow {
+  position: absolute;
+  top: -30px;
+  left: 30px;
+  width: 100px;
 }
