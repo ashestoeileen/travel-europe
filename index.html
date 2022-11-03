@@ -36,7 +36,7 @@
       <div class="flexbox-left">
       <ul class="star">
         <li>Visit the Anne Frank House, reserve ahead</li>
-        <li>Explore the Museum of Contempory Art</li>
+        <li>Explore the Museum of Contemporary Art</li>
         <li>Take a ride through the canals</li>
         <li>Head to Jordaan for some tasty eats and shopping</li>
       </ul>
@@ -138,47 +138,73 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script>
       $('#amsterdam-expand').click(function(){
-        $('#amsterdam-page').css('display', 'block').css('width', '90vw').css('opacity','1')
+        $('#amsterdam-page').css('display', 'block').css('width', '100vw').css('opacity','1')
         $('#amsterdam-nav').css('display', 'none')
         $('.wander').css('display', 'none')
+        $('.paris-page').css('display', 'none')
+        $('.london-page').css('display', 'none')
+        $('.rail-route-page').css('display', 'none')
       })
       $('#amsterdam-page .back-arrow').click(function(){
         $('#amsterdam-page').css('display', 'none').css('width', '0').css('opacity','0')
         $('#amsterdam-nav').css('display', 'block')
         $('.wander').css('display', 'block')
+        $('.paris-page').css('display', 'block')
+        $('.london-page').css('display', 'block')
+        $('.rail-route-page').css('display', 'block')
+        
       })
       //
         $('#london-expand').click(function(){
-        $('#london-page').css('display', 'block').css('width', '90vw').css('opacity','1')
+        $('#london-page').css('display', 'block').css('width', '100vw').css('opacity','1')
         $('#london-nav').css('display', 'none')
         $('.wander').css('display', 'none')
+        $('.paris-page').css('display', 'none')
+        $('.amsterdam-page').css('display', 'none')
+        $('.rail-route-page').css('display', 'none')
       })
       $('#london-page .back-arrow').click(function(){
         $('#london-page').css('display', 'none').css('width', '0').css('opacity','0')
         $('#london-nav').css('display', 'block')
         $('.wander').css('display', 'block')
+        $('.paris-page').css('display', 'block')
+        $('.amsterdam-page').css('display', 'block')
+        $('.rail-route-page').css('display', 'block')
       })
         //
         $('#paris-expand').click(function(){
-        $('#paris-page').css('display', 'block').css('width', '90vw').css('opacity','1')
+        $('#paris-page').css('display', 'block').css('width', '100vw').css('opacity','1')
         $('#paris-nav').css('display', 'none')
         $('.wander').css('display', 'none')
+        $('.london-page').css('display', 'none')
+        $('.amsterdam-page').css('display', 'none')
+        $('.rail-route-page').css('display', 'none')
       })
       $('#paris-page .back-arrow').click(function(){
         $('#paris-page').css('display', 'none').css('width', '0').css('opacity','0')
         $('#paris-nav').css('display', 'block')
         $('.wander').css('display', 'block')
+        $('.london-page').css('display', 'block')
+        $('.amsterdam-page').css('display', 'block')
+        $('.rail-route-page').css('display', 'block')
+       
       })
 //
       $('#rail-expand').click(function(){
-        $('#rail-route-page').css('display', 'block').css('width', '90vw').css('opacity','1')
+        $('#rail-route-page').css('display', 'block').css('width', '100vw').css('opacity','1')
         $('#rail-nav').css('display', 'none')
         $('.wander').css('display', 'none')
+        $('.london-page').css('display', 'none')
+        $('.amsterdam-page').css('display', 'none')
+        $('.paris-page').css('display', 'none')
       })
       $('#rail-route-page .back-arrow').click(function(){
         $('#rail-route-page').css('display', 'none').css('width', '0').css('opacity','0')
         $('#rail-nav').css('display', 'block')
         $('.wander').css('display', 'block')
+        $('.london-page').css('display', 'block')
+        $('.amsterdam-page').css('display', 'block')
+        $('.paris-page').css('display', 'block')
       })
 
     </script>
