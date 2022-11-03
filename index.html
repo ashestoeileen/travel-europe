@@ -11,33 +11,176 @@
 
   <body class="homepage">
     <main>
-      <div class="wander">
-        <h1>Wander <br>
-            Europe</h1>
+      <div class="nav-item wander">
+        <h1>
+          Wander <br />
+          Europe
+        </h1>
       </div>
 
-      <div class="amsterdam">
-        <a href="amsterdam-page.html"><h2>amsterdam</h2> </a>
+      <div class="nav-item amsterdam">
+        <article id="amsterdam-nav"><a href="#" id="amsterdam-expand"><h2>amsterdam</h2></a>
         <span class="number">1</span>
+        </article>
+   <article id="amsterdam-page"  class="amsterdam-page">
+    
+    <div class="wrapper">
+      <div class="foot-number"><h2>1</h2></div>
+      <div class="flexbox-container">
+        <div class="flexbox-right">
+
+        <h1>Amsterdam</h1> 
+        <img src="images/amsterdam-shape.png">
+        </div>
+
+      <div class="flexbox-left">
+      <ul class="star">
+        <li>Visit the Anne Frank House, reserve ahead</li>
+        <li>Explore the Museum of Contempory Art</li>
+        <li>Take a ride through the canals</li>
+        <li>Head to Jordaan for some tasty eats and shopping</li>
+      </ul>
+    </div>
+    </div>
+    <a href="#" id="back-link"><img class="back-arrow" src="images/left-arrow.png"></a>
+        </article>
       </div>
 
-      <div class="paris">
-        <a href="paris-page.html"><h2>paris</h2> </a>
-        <span class="number">2</span>
+      <div class="nav-item paris">
+        <article id="paris-nav">
+        <a href="#" id="paris-expand"><h2>paris</h2> </a>
+        <span class="number">2</span></article>
+        <article class="paris-page" id="paris-page">
+<div class="wrapper">
+        <div class="flexbox-container">
+            <div class="foot-number"><h2>2</h2></div>
+            <div class="flexbox-right">
+    
+            <h1>Paris</h1> 
+            <img src="images/paris-shape.png"> </img>
+            </div>
+    
+          <div class="flexbox-left">
+          <ul class="star">
+            <li>Make your way around the Lourve, reserve ahead</li>
+            <li>Explore the Eiffel tower and Siene river</li>
+            <li>Eat a Parasian dinner in the Montmatre neighborhood</li>
+            <li>Visit the gothic Saint-Chapelle chapel  </li>
+     
+          </ul></div>
+    </div>
+          <a href="#" id="back-link"><img class="back-arrow" src="images/left-arrow.png"></a>
+        </article>
       </div>
 
-      <div class="london">
-        <a href="london-page.html"><h2>london</h2> </a>
+      <div class="nav-item london">
+        <article id="london-nav">
+        <a href="#" id="london-expand"><h2>london</h2> </a>
         <span class="number">3</span>
+        </article>
+        <article id="london-page" class="london-page">
+          <div class="wrapper">
+        <div class="foot-number"><h2>3</h2></div>
+      <div class="flexbox-container">
+        <div class="flexbox-right">
+
+        <h1>London</h1> 
+        <img src="images/london-shape.png"> </img>
+        </div>
+
+      <div class="flexbox-left">
+      
+    
+      <ul class="star">
+        <li>Check out one of the many free museums in London</li>
+        <li>Explore the Leek street tunnels of grafitti art </li>
+        <li>Take a ride on the London Eye for spectacular views</li>
+        <li>Head to a pub for a traditional meat pie </li>
+ 
+      </ul></div>
+    </div>
+<a href="#" id="back-link"><img class="back-arrow" src="images/left-arrow.png"></a>
+        </article>
       </div>
 
-      <div class="rail">
-        <a href="rail-route-page.html"><h2>rail route</h2> </a>
+      <div class="nav-item rail">
+        <article id="rail-nav">
+        <a href="#" id="rail-expand"><h2>rail route</h2> </a>
         <span class="number">4</span>
+        </article>
+        <article id="rail-route-page" class="rail-route-page">
+          <div class="foot-number"><h2>4</h2></div>
+    <div class="wrapper">
+      <div class="flexbox-container">
+        <div class="flexbox-right">
+
+        <h1>Rail Route</h1> 
+        </div>
+
+      <div class="flexbox-left">
+      <ul class="star">
+        <li>Amsterdam Centraal 
+          <br>Amsterdam, Netherlands</li>
+        <li>St. Pancreas 
+          <br>London, United Kingdom
+           </li>
+        <li>Guar Du Nord
+          <br>Paris, France</li>
+        
+ 
+      </ul></div>
+    </div>
+    <a href="#" id="back-link"><img class="back-arrow" src="images/left-arrow.png"></a>
+        </article>
       </div>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script>
+      $('#amsterdam-expand').click(function(){
+        $('#amsterdam-page').css('display', 'block').css('width', '90vw').css('opacity','1')
+        $('#amsterdam-nav').css('display', 'none')
+        $('.wander').css('display', 'none')
+      })
+      $('#amsterdam-page .back-arrow').click(function(){
+        $('#amsterdam-page').css('display', 'none').css('width', '0').css('opacity','0')
+        $('#amsterdam-nav').css('display', 'block')
+        $('.wander').css('display', 'block')
+      })
+      //
+        $('#london-expand').click(function(){
+        $('#london-page').css('display', 'block').css('width', '90vw').css('opacity','1')
+        $('#london-nav').css('display', 'none')
+        $('.wander').css('display', 'none')
+      })
+      $('#london-page .back-arrow').click(function(){
+        $('#london-page').css('display', 'none').css('width', '0').css('opacity','0')
+        $('#london-nav').css('display', 'block')
+        $('.wander').css('display', 'block')
+      })
+        //
+        $('#paris-expand').click(function(){
+        $('#paris-page').css('display', 'block').css('width', '90vw').css('opacity','1')
+        $('#paris-nav').css('display', 'none')
+        $('.wander').css('display', 'none')
+      })
+      $('#paris-page .back-arrow').click(function(){
+        $('#paris-page').css('display', 'none').css('width', '0').css('opacity','0')
+        $('#paris-nav').css('display', 'block')
+        $('.wander').css('display', 'block')
+      })
+//
+      $('#rail-expand').click(function(){
+        $('#rail-route-page').css('display', 'block').css('width', '90vw').css('opacity','1')
+        $('#rail-nav').css('display', 'none')
+        $('.wander').css('display', 'none')
+      })
+      $('#rail-route-page .back-arrow').click(function(){
+        $('#rail-route-page').css('display', 'none').css('width', '0').css('opacity','0')
+        $('#rail-nav').css('display', 'block')
+        $('.wander').css('display', 'block')
+      })
+
+    </script>
   </body>
-
-  
 </html>
-
